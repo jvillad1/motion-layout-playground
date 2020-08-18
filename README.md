@@ -1,4 +1,4 @@
-# motion-layout_playground
+# motion-layout-playground
 MotionLayout Playground
 
 ## Description
