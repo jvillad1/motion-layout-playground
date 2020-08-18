@@ -1,4 +1,4 @@
-package com.jvillad1.motionlayoutplayground.ui.swipe.epoxy
+package com.jvillad1.motionlayoutplayground.ui.epoxy
 
 import android.view.View
 import com.airbnb.epoxy.EpoxyHolder

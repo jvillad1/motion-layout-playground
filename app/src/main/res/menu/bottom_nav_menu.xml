@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_on_swipe"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_on_swipe_black_24dp"
         android:title="@string/title_on_swipe" />
 
     <item
         android:id="@+id/navigation_fling"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_fling_black_24dp"
         android:title="@string/title_fling" />
 
 </menu>

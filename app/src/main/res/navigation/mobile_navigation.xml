@@ -7,14 +7,12 @@
 
     <fragment
         android:id="@+id/navigation_on_swipe"
-        android:name="com.jvillad1.motionlayoutplayground.ui.home.OnSwipeFragment"
-        android:label="@string/title_on_swipe"
+        android:name="com.jvillad1.motionlayoutplayground.ui.swipe.OnSwipeFragment"
         tools:layout="@layout/fragment_on_swipe" />
 
     <fragment
         android:id="@+id/navigation_fling"
-        android:name="com.jvillad1.motionlayoutplayground.ui.dashboard.FlingFragment"
-        android:label="@string/title_fling"
+        android:name="com.jvillad1.motionlayoutplayground.ui.fling.FlingFragment"
         tools:layout="@layout/fragment_fling" />
 
 </navigation>

@@ -1,12 +1,12 @@
-package com.jvillad1.motionlayoutplayground.ui.swipe.epoxy
+package com.jvillad1.motionlayoutplayground.ui.epoxy
 
 import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.jvillad1.motionlayoutplayground.R
-import com.jvillad1.motionlayoutplayground.ui.swipe.epoxy.CharacterItemModel.CharacterHolder
-import com.jvillad1.motionlayoutplayground.ui.swipe.model.CharacterUI
+import com.jvillad1.motionlayoutplayground.ui.epoxy.CharacterItemModel.CharacterHolder
+import com.jvillad1.motionlayoutplayground.ui.model.CharacterUI
 
 /**
  * EpoxyModelClass for the Character list.

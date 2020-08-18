@@ -1,4 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<temp_root xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:showIn="@layout/fragment_on_swipe">
 
-</temp_root>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/videoPlayerContainer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/video_player_height"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sideCopyGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomCopyContainer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/copy_container_height"
+        android:background="@color/teal_700"
+        android:padding="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/nowPlayingTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/now_playing"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="?attr/colorOnPrimarySurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bottomCopyContainer" />
+
+        <include layout="@layout/layout_video_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sideCopyContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="@color/teal_700"
+        android:padding="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sideCopyGuideline"
+        app:layout_constraintTop_toTopOf="@id/videoPlayerContainer">
+
+        <include layout="@layout/layout_video_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/toggleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:layout_margin="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_dropdown_gray_24dp" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/charactersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/margin_x_large"
+        android:paddingVertical="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoPlayerContainer"
+        tools:listitem="@layout/item_character" />
+</merge>

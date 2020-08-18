@@ -1,5 +1,20 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Margin/Padding -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_x_large">24dp</dimen>
+
+    <!-- VideoPlayer -->
+    <dimen name="video_player_min_height">120dp</dimen>
+    <dimen name="video_player_height">320dp</dimen>
+    <dimen name="copy_container_height">80dp</dimen>
+
+
+    <!-- CardView -->
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+
 </resources>

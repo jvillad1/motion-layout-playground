@@ -1,4 +1,4 @@
-package com.jvillad1.motionlayoutplayground.ui.swipe.model
+package com.jvillad1.motionlayoutplayground.ui.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

@@ -1,7 +1,6 @@
-package com.jvillad.starwars.android.presentation.search
+package com.jvillad1.motionlayoutplayground.ui.fling
 
 import androidx.recyclerview.widget.RecyclerView.OnFlingListener
-import timber.log.Timber
 import kotlin.math.abs
 
 open class RecyclerViewSwipeListener internal constructor(
@@ -17,32 +16,17 @@ open class RecyclerViewSwipeListener internal constructor(
                 onSwipeListener.onSwipeUp()
             }
             return true
-        } else if (!isScrollingVertically && abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
-            if (velocityX < 0) {
-                onSwipeListener.onSwipeLeft()
-            } else {
-                onSwipeListener.onSwipeRight()
-            }
-            return true
         }
         return false
     }
 
     interface OnSwipeListener {
-        fun onSwipeRight() {
-            Timber.d("Optional")
-        }
-
-        fun onSwipeLeft() {
-            Timber.d("Optional")
-        }
-
         fun onSwipeUp()
 
         fun onSwipeDown()
     }
 
     companion object {
-        private const val SWIPE_VELOCITY_THRESHOLD = 2000
+        private const val SWIPE_VELOCITY_THRESHOLD = 1000
     }
 }

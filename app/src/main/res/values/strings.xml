@@ -2,4 +2,12 @@
     <string name="app_name">MotionLayout Playground</string>
     <string name="title_on_swipe">OnSwipe</string>
     <string name="title_fling">Fling</string>
+
+    <!-- Video Player container -->
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="video_title">Fauci recommends universal wearing of masks</string>
+
+    <!-- Character Item -->
+    <string name="character_search_birth_year">Birth Year: %1$s</string>
+    <string name="character_search_gender">Gender: %1$s</string>
 </resources>
