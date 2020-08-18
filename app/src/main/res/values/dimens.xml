@@ -6,9 +6,10 @@
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_large">20dp</dimen>
     <dimen name="margin_x_large">24dp</dimen>
+    <dimen name="margin_xx_large">40dp</dimen>
 
     <!-- VideoPlayer -->
-    <dimen name="video_player_min_height">120dp</dimen>
+    <dimen name="video_player_min_height">150dp</dimen>
     <dimen name="video_player_height">320dp</dimen>
     <dimen name="copy_container_height">80dp</dimen>
 
