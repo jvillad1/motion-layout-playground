@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MotionLayout Playground</string>
+    <string name="title_on_swipe">OnSwipe</string>
+    <string name="title_fling">Fling</string>
+</resources>
