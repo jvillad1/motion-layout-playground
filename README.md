@@ -26,11 +26,11 @@ Use MotionLayout to trigger the header animation programmatically listening for 
 
 ## MotionLayout Basics
 - Use the layoutDescription attribute in the MotionLayout tag to define a MotionScene
-- Use Android Studio to preview the animation MotionLayout editor
+- Use Android Studio to preview the animation using MotionLayout editor
 - Use the MotionScene to Animate the desired views inside the corresponding MotionLayout
 - The MotionScene has 2 main components
-  - Transition defines the way in which 2 states will be transformed between
-  - ConstraintSet defines the states between start and end of the scene
+  - Transition: defines the way in which 2 states will be transformed between
+  - ConstraintSet: defines the states between start and end of the scene
 
 ### Who do I talk to? ###
 * Juan Camilo Villada 
