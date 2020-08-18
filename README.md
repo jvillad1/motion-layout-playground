@@ -19,8 +19,8 @@ Use MotionLayout to trigger the header animation programmatically listening for 
 
 ## Get Started with MotionLayout
 - Add dependencies:
-    androidx.constraintlayout:constraintlayout:2.0.0-beta8
-    androidx.recyclerview:recyclerview:1.2.0-alpha05
+    - androidx.constraintlayout:constraintlayout:2.0.0-beta8
+    - androidx.recyclerview:recyclerview:1.2.0-alpha05
 - Use the Android Studio layout editor to convert a ConstraintLayout to a MotionLayout 
 - Check the MotionScene file generated after the convertion (under xml res directory)
 
